@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono:wght@500&family=Yanone+Kaffeesatz:wght@500&display=swap');
+
 .App {
   text-align: center;
   background-color: #121212;
@@ -10,7 +12,84 @@
 body {
   padding: 0%;
   margin: 0;
+  background-color: #121212;
 }
+
+/* loader start */
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+/* ---loader end */
 
 nav {
   height: 60px;
@@ -23,7 +102,7 @@ nav {
 
 nav h1 {
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: white;
   font-size: 45px;
 }
@@ -46,7 +125,7 @@ nav h1 {
   flex-direction: column;
 }
 
-.row {
+.brow {
   flex: 33%;
   display: flex;
   flex-direction: row;

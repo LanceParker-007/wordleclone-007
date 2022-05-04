@@ -20,8 +20,8 @@ const App = () => {
     generateWordSet().then((words) => {
       // console.log(words.wordSet);
       setWordSet(words.wordSet);
-      setCorrectWord(words.todaysWord);
       // console.log(words.todaysWord);
+      setCorrectWord(words.todaysWord);
     });
   }, []);
 
